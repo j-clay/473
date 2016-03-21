@@ -22,7 +22,7 @@ app.post('/flip', function(req, res) {
 	} else {
 		res.end(JSON.stringify({"result":"loss"}));
 		loss++;
-	};
+	}
 });
 app.listen(8080, function () {
 	console.log('App running on port 8080!');
