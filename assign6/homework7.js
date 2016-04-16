@@ -23,7 +23,7 @@ mongoclient.connect(url, function(err, db) {
 
 app.get('/links', function(req, res) {
 	
-	col.find().toArray(function(err, items) {res.send(items)});
+	col.find().toArray(function(err, items) {res.send(items);});
 });
 
 app.get('/click/:url', function(req, res) {
